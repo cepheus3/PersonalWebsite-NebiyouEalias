@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
 
 :root{
     --yellow:#f9ca24;
@@ -457,3 +458,51 @@ header .navbar ul li a:hover{
     }
 
  }
+
+
+
+
+ /*social media icons*/
+
+
+  .social-icons {
+    position: relative;
+    right: 1em;
+    top: -500;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+
+   
+  }
+  .social-icons i{
+    padding-left: 15px;
+  }
+  .social-icons a{
+        color: inherit;
+    }
+
+  .fa-facebook{
+    justify-self: end;
+  }
+  .fa-twitter{
+    justify-self: center;
+  }
+  .fa-instagram{
+    justify-self: start;
+  }
+  .
+}
+/*another
+*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+a{
+    text-decoration-color: none;
+    text-decoration: none;
+}
