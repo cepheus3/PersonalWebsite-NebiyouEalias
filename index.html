@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website(c3ph3us)</title>
-
+    <link href="images/neb.jpg" rel="icon">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
@@ -18,10 +18,19 @@
 
 <header>
 
-    <div class="user">
-        <img src="images/neb.jpg" alt="">
-        <h3 class="name">Nebiyou Ealias</h3>
-        <p class="post">Web Developer & Cyber Security Specialist</p>
+    <div>
+        <img id="myImg" src="images/neb.jpg" alt="Neba">
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    </div>
+    <div>
+        <h3 style="font-size: 3.5rem;
+    color:#fff;">Nebiyou Ealias</h3>
+        <p style="font-size: 2rem;
+    color:yellowgreen;">Web Developer & Cyber Security Specialist</p>
     </div>
 
     <nav class="navbar">
@@ -29,12 +38,12 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#portfolio">service</a></li>
             <li><a href="#contact">contact</a></li>
             <li><a href="#gallery">gallery</a></li>
         </ul>
     </nav>
-
+    <p class="copyright">&copy; Copyright <strong>Neba</strong>. All Rights Reserved <br> Designed by <a href="https://bootstrapmade.com/" style="color: yellowgreen;"> Nebiyou Ealias</a></p>
 </header>
 
 <!-- header section ends -->
@@ -47,7 +56,7 @@
 
     <h3>HI THERE !</h3>
     <h1>I'M <span>Nebiyou Ealias</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
+    <p>From Addis Ababa, Ethiopia.I'm a Third Year Computer Science and Engineering Student at Adama Science and Technology University located at Adama,Ethiopia. This is my personal website You can find Everything here if not comment me on the comment section        
     </p>
     <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
 
@@ -65,7 +74,7 @@
 
     <div class="info">
         <h3> <span> name : </span> Nebiyou Ealias </h3>
-        <h3> <span> age : </span> 20 </h3>
+        <h3> <span> age : </span> 22 </h3>
         <h3> <span> qualification : </span> Computer Science and Engineering</h3>
         <h3> <span> post : </span> Web Developer and Cyber Security Specialist </h3>
         <h3> <span> language : </span> Amharic & English </h3>
@@ -163,12 +172,32 @@
 
 <section class="portfolio" id="portfolio">
 
-<h1 class="heading"> my <span>portfolio</span> </h1>
+<h1 class="heading"> my <span>service</span> </h1>
+
+<!-- <div class="box-container">
+
+    <div class="box"> 
+        <div class="service-box">
+            <div class="service-ico">
+              <i class="fa fa-monitor" style="color: white; font-size: 50px;"></i><
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+ -->
 
 <div class="box-container">
 
     <div class="box">
-        <img src="images/img1.jpg" alt="">
+         <img src="images/neb.jpg" style="width=100%;" >
+                
     </div>
 
     <div class="box">
@@ -210,7 +239,7 @@
         <h3 class="title">contact info</h3>
 
         <div class="info">
-            <h3> <i class="fas fa-envelope"></i> nebiyouelias96@gmail.com </h3>
+            <h3> <i class="fas fa-envelope"></i>*nebiyouelias96@gmail.com </h3>
             <h3> <i class="fas fa-phone"></i> +251-926-691-892 </h3>
             <h3> <i class="fas fa-phone"></i> +251-912-132-599 </h3>
             <h3> <i class="fas fa-map-marker-alt"></i> Addis ababa,Ethiopia </h3>
@@ -221,8 +250,8 @@
                     <a href="https://www.instagram.com/neb3elias" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://github.com/cepheus3" target="_blank"><i class="fab fa-github"></i></a>                    
                     <i class="fab fa-google-plus"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-stack-overflow"></i>
+                    <a href="https://www.linkedin.com/in/nebiyou-ealias-726016197/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://stackoverflow.com/users/16406336/nebiyou-ealias" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 
 
                     </div>
@@ -231,11 +260,12 @@
     </div>
 
     <form action="">
+         <p class="copyright" style="color: y"> comment section</p>
 
         <input type="text" placeholder="name" class="box">
         <input type="email" placeholder="email" class="box">
         <input type="text" placeholder="project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="comment"></textarea>
         <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
     </form>
@@ -247,17 +277,11 @@
 
 <!-- contact section ends -->
 
-<!-- <div class="social-icons" >
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <a href="https://github.com/cepheus3" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
- -->
+
 <!-- scroll top button  -->
 
 <a href="#home" class="top">
-    <img src="images/scroll-top-img.png" alt="">
+    <i class="fa fa-chevron-up" style="color: white; font-size: 30px;">
 </a>
 
 
@@ -278,11 +302,12 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
  -->
- <script src="java/jquery.min.js"></script>
+ <script src="js/jquery.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="java/script.js"></script>
+<script src="js/script.js"></script>
 
 
 </body>
+
 </html>

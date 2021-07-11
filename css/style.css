@@ -6,6 +6,8 @@
 }
 
 *{
+ 
+
     font-family: 'Nunito', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
@@ -23,6 +25,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
@@ -95,12 +98,12 @@ header{
 }
 
 header .user img{
-    height:17rem;
+  /*  height:17rem;
     width:17rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.7rem solid var(--yellow);*/
 }
 
 header .user .name{
@@ -150,6 +153,11 @@ header .navbar ul li a:hover{
 }
 
 .home{
+    background-image: url("../images/intro-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -375,20 +383,6 @@ header .navbar ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:1200px){
@@ -506,3 +500,152 @@ a{
     text-decoration-color: none;
     text-decoration: none;
 }
+
+
+/*image shower*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  transition: 0.3s;
+  
+   height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  /*color: #f1f1f1;*/
+  color: yellow;
+  font-size: 70px;
+  font-weight: bold;
+  /*transition: 0.3s;*/
+}
+
+/*.close:hover,*/
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.copyright{
+color: white;
+font-size: 16px;
+}
+
+
+
+/*======================================
+//--//-->   SERVICES
+======================================*/
+
+.service-box {
+  background-color: #372f2f;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  position: ;
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  /*background-color: #0078ff;*/
+  background-color: #504949;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+  color: white;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+}
+
+.service-box .s-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.service-box .s-description {
+  color: white;
+}
+
