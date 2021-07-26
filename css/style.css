@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script|Playfair+Display:400italic|Libre+Baskerville:400italic|Alice|Niconne|Radley:400italic|Sorts+Mill+Goudy:400italic|Fanwood+Text:400italic|Prata|Lora:400italic|Volkhov:400italic|Cambo|Lobster+Two|Playball|Dancing+Script|Sail|Rozha+One|Yeseva+One|Linden+Hill|Marcellus+SC|Antic+Didone|Sacramento|Alex+Brush|Allura|Arizonia|Herr+Von+Muellerhoff);
 
 :root{
     --yellow:#f9ca24;
@@ -199,6 +200,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info h3{
+    font-family: 'Prata', serif;
     font-size: 2rem;
     color:var(--yellow);
     padding:1rem 0;
