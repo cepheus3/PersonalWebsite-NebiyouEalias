@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script|Playfair+Display:400italic|Libre+Baskerville:400italic|Alice|Niconne|Radley:400italic|Sorts+Mill+Goudy:400italic|Fanwood+Text:400italic|Prata|Lora:400italic|Volkhov:400italic|Cambo|Lobster+Two|Playball|Dancing+Script|Sail|Rozha+One|Yeseva+One|Linden+Hill|Marcellus+SC|Antic+Didone|Sacramento|Alex+Brush|Allura|Arizonia|Herr+Von+Muellerhoff");
-
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script|Playfair+Display:400italic|Libre+Baskerville:400italic|Alice|Niconne|Radley:400italic|Sorts+Mill+Goudy:400italic|Fanwood+Text:400italic|Prata|Lora:400italic|Volkhov:400italic|Cambo|Lobster+Two|Playball|Dancing+Script|Sail|Rozha+One|Yeseva+One|Linden+Hill|Marcellus+SC|Antic+Didone|Sacramento|Alex+Brush|Allura|Arizonia|Herr+Von+Muellerhoff);
 :root{
     --yellow:#f9ca24;
 }
@@ -22,11 +21,12 @@
     background:var(--yellow);
     color:#333;
 }
+/*overall html behavior*/
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
@@ -46,6 +46,9 @@ body{
     overflow-x: hidden;
     padding-left: 35rem;
 }
+
+
+
 
 section{
     min-height: 100vh;
@@ -99,7 +102,7 @@ header{
 }
 
 header .user img{
-  /*  height:17rem;
+ /*   height:17rem;
     width:17rem;
     border-radius: 50%;
     object-fit: cover;
@@ -109,7 +112,7 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    color:#eee;
 }
 
 header .user .post{
@@ -154,7 +157,7 @@ header .navbar ul li a:hover{
 }
 
 .home{
-    
+    /*background-image: url("../images/bg4.jpg");*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,6 +240,9 @@ header .navbar ul li a:hover{
     color:#fff;
 }
 
+
+/* The Education Part */
+
 .education .box-container{
     display: flex;
     align-items: center;
@@ -275,7 +281,7 @@ header .navbar ul li a:hover{
 }
 
 .education .box-container .box i{
-    position: absolute;
+   position: absolute;
     top:-1.5rem; left:-2.5rem;
     height:5rem;
     width: 5rem;
@@ -287,32 +293,108 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
-.portfolio .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
+
+
+/*serivce*/
+
+
+
+
+.achievement-box {
+  background-color: #333333;
+  /*border: 2px solid #f9ca24;*/
+  display: flex;
+  margin: 3rem;
+  height: 100px;
+  width: 500px;
+
 }
 
-.portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+
+.achievement-box-namebar-area {
+  font-size: 16px;
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  margin: 20px;
+  height: 80px;
 }
 
-.portfolio .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
+.achievement-box-bar {
+  background-color: rgb(49, 83, 107);
+  border: 1px solid rgb(64, 81, 102);
+  height: 20px;
+  width: 380px;
 }
 
-.portfolio .box-container .box:hover img{
-    transform: scale(1.2);
+@keyframes skill-25 {
+  from { width: 0px; }
+  to { width: 95px; }
 }
+
+@keyframes skill-50 {
+  from { 
+    background-color: rgb(255,0,0);
+    width: 0px; 
+  }
+  to { 
+    width: 190px; 
+  }
+}
+
+@keyframes skill-75 {
+   from { 
+    background-color: rgb(255,0,0);
+    width: 0px; 
+  }
+  to { width: 280px; }
+}
+
+@keyframes skill-100 {
+   from { 
+    background-color: rgb(255,0,0);
+    width: 0px; 
+  }
+  to { width: 376px; }
+}
+
+.achievement-box-status-25 {
+  background-color: rgb(255,0,0);
+  margin: 2px;
+  margin-left: 3px;
+  height: 14px;
+  width: 95px;
+  animation: skill-25 3s;
+}
+
+.achievement-box-status-50 {
+  background-color: rgb(255,255,0);
+  margin: 2px;
+  height: 14px;
+  width: 190px;
+  animation: skill-50 3s;
+}
+
+.achievement-box-status-75 {
+  background-color: rgb(100,255,120);
+  margin: 2px;
+  height: 14px;
+  width: 285px;
+  animation: skill-75 3s;
+}
+
+.achievement-box-status-100 {
+  background-color: rgb(0,255,0);
+  margin: 2px;
+  height: 14px;
+  width: 376px;
+  animation: skill-100 3s;
+}
+
+
+/*end of service*/
 
 .contact .row{
     display: flex;
@@ -531,7 +613,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
+  width: 100%;  Full width 
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
@@ -543,11 +625,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 /* Caption of Modal Image */
 #caption {
+  font-size: 20px;
   margin: auto;
   display: block;
   width: 80%;
@@ -556,6 +639,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+
 }
 
 /* Add Animation */
@@ -592,7 +676,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .close:focus {
   color: #bbb;
   text-decoration: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 /* 100% Image Width on Smaller Screens */
